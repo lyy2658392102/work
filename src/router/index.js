@@ -4,17 +4,16 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-export const constantRouterMap = [{
-    path: '/',
-    name: 'home',
-    component: () => import('@/views/Home/Homepage'),
-  },
+export const constantRouterMap = [
+  // {
+  //   path: '/home',
+  //   name: 'home',
+  //   component: () => import('@/views/Home/Homepage'),
+  // },
   {
     path: '/login',
     name: 'login',
-    component: (resolve) => {
-      require(['@/views/login/index'], resolve)
-    },
+    component: () => import('@/views/login/index'),
   }
 ]
 

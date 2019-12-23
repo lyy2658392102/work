@@ -1,17 +1,28 @@
 <template>
   <div id="login">
-    <span>login</span>
+    <img :src="login" alt />
+    <span>学生体质云</span>
+    <van-cell-group>
+      <van-field
+        v-model="username"
+        label="账号"
+        placeholder="手机号"
+        @click-right-icon="$toast('question')"
+      />
+
+      <van-field v-model="password" type="password" label="密码" placeholder="请输入密码" />
+    </van-cell-group>
   </div>
 </template>
-<style lang="scss" scoped>
-#login {
-  position: absolute;
-  width: 100%;
-  span {
-    box-sizing: border-box;
-    display: block;
-    width: 100px;
-    margin: 20px;
+<script>
+import login from "@/assets/login.png";
+export default {
+  data() {
+    return {
+      login: login,
+      username: "",
+      password: ""
+    };
   }
-}
-</style>
+};
+</script>

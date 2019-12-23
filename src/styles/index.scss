@@ -1,6 +1,15 @@
 body {
     height: 100%;
     margin: 0;
+    background: #fff !important;
+    font-family: Helvetica Neue,
+        Helvetica,
+        PingFang SC,
+        Hiragino Sans GB,
+        Microsoft YaHei,
+        Arial,
+        sans-serif;
+    user-select: none;
 
     #homepage {
         height: 100%;
@@ -11,6 +20,7 @@ body {
 
 html {
     height: 100%;
+    box-sizing: border-box;
 }
 
 #app {
@@ -63,3 +73,5 @@ a:hover {
         height: 0;
     }
 }
+
+@import './app.scss';
