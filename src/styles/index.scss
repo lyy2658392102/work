@@ -4,14 +4,13 @@ body {
 
     #homepage {
         height: 100%;
-        background: #F2F4F5 url('../assets/logo-bg.jpg') !important;
+        background: url('../assets/logo-bg.png') !important;
         background-size: 100% 100% !important;
     }
 }
 
 html {
     height: 100%;
-    // box-sizing: border-box;
 }
 
 #app {

@@ -5,8 +5,9 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 export const constantRouterMap = [{
-    path: '/',
-    component: () => import('@/views/Homepage'),
+    path: '/home',
+    naem: 'home',
+    component: () => import('@/views/Home/Homepage'),
   },
   {
     path: '/login',
