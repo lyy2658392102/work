@@ -2,7 +2,7 @@ body {
     height: 100%;
     margin: 0;
     background: #fff !important;
-    font-family: Helvetica Neue,
+    font-family: PingFang-SC-Medium, Helvetica Neue,
         Helvetica,
         PingFang SC,
         Hiragino Sans GB,
@@ -71,6 +71,26 @@ a:hover {
         content: " ";
         clear: both;
         height: 0;
+    }
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+
+    .van-button {
+        width: 90%;
+        font-size: 30px;
+        margin: 0 30px;
+    }
+
+    .van-button--large {
+        height: 80px;
     }
 }
 

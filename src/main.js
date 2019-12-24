@@ -10,7 +10,11 @@ Vant()
 import axios from 'axios';
 Vue.prototype.$axios = axios;
 
+
 import '@/styles/index.scss' // global css
+
+import QueryString from '@/utils/QueryString'
+Vue.use(QueryString)
 
 Vue.config.productionTip = false
 
