@@ -1,8 +1,8 @@
 <template>
   <div class="register">
-    <header @click="goBack()">
-      <i></i>
-      <span>已有账号</span>
+    <header @click="goBack()" class="clearfix">
+      <i class="fl"></i>
+      <span class="fl">已有账号</span>
     </header>
     <div class="login-top">
       <img :src="login" alt />
@@ -54,7 +54,7 @@ export default {
       password: "",
       phone: "",
       authCode: "",
-      checked: true,
+      checked: "",
       radio: ""
     };
   },

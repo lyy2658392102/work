@@ -1,6 +1,7 @@
 .login,
 .register,
-.forgetpass {
+.forgetpass,
+.addchildren {
     .login-top {
         text-align: center;
 
@@ -40,7 +41,7 @@
         }
 
         .van-cell:nth-child(2) {
-            border-bottom: 1px solid #EFEFEF;
+            border-bottom: 1px solid #DEDEDE;
 
             .van-field__control {
                 width: 65%;

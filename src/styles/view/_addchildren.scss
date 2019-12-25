@@ -1,0 +1,14 @@
+.addchildren {
+    header {
+        margin-bottom: 150px;
+    }
+
+    .van-cell-group {
+        margin: 0 70px 150px 70px;
+        position: relative;
+
+        .van-field__label {
+            width: 110px;
+        }
+    }
+}
