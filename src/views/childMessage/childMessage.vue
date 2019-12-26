@@ -66,7 +66,7 @@
         </li>
       </ul>
     </div>
-    <div class="btn">
+    <div class="btn flexCenter">
       <van-button type="default" round size="large" color="#FF6D5A">移除孩子</van-button>
     </div>
   </div>

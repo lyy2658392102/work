@@ -1,0 +1,31 @@
+.terms {
+    header {
+        margin-bottom: 35px;
+    }
+
+    .terms-content {
+        padding: 0 30px 60px 30px;
+
+        h3 {
+            color: #313131;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        p {
+            color: #313131;
+            font-size: 24px;
+            line-height: 40px;
+            margin-bottom: 50px;
+        }
+
+        div {
+            p:first-child {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

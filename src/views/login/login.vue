@@ -17,7 +17,7 @@
       <van-switch v-model="checked" active-color=" #FF7A18" />
     </van-cell-group>
     <div class="btn flexCenter">
-      <van-button type="default" round size="large" color="#FFCCA6">登录</van-button>
+      <van-button type="default" round size="large" color="#FFCCA6" to="/personalCenter">登录</van-button>
     </div>
     <div class="login-bottom">
       <p class="flexCenter">

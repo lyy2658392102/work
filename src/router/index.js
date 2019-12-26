@@ -4,14 +4,13 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-export const constantRouterMap = [
-  // {
-  //   path: '/home',
-  //   name: 'home',
-  //   component: () => import('@/views/Home/Homepage'),
-  // },
-  {
+export const constantRouterMap = [{
     path: '/',
+    name: 'homepage',
+    component: () => import('@/views/homepage/homepage'),
+  },
+  {
+    path: '/login',
     name: 'login',
     component: () => import('@/views/login/login'),
   }, {
@@ -38,6 +37,14 @@ export const constantRouterMap = [
     path: '/connectUs',
     name: 'connectUs',
     component: () => import('@/views/connectUs/connectUs'),
+  }, {
+    path: '/versions',
+    name: 'versions',
+    component: () => import('@/views/versions/versions'),
+  }, {
+    path: '/terms',
+    name: 'terms',
+    component: () => import('@/views/terms/terms'),
   },
 
 ]

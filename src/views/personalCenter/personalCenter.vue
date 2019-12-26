@@ -31,7 +31,7 @@
         <li class="clearfix" v-for="(item,index) in childMessage" :key="index">
           <img src="@/assets/base64/pictureFrame.png" class="fl" />
           <span class="fl">{{item.childname}}</span>
-          <span class="messagebox-right" @click="linkto()">
+          <span class="messagebox-right" @click="childMessageTo()">
             {{item.class}}
             <i></i>
           </span>
@@ -48,20 +48,20 @@
             <i></i>
           </span>
         </li>
-        <li class="clearfix">
+        <li class="clearfix" @click="versionsTo()">
           <span>版本</span>
           <span class="messagebox-right">
             <i class="newedition"></i>
             <i></i>
           </span>
         </li>
-        <li class="clearfix" @click="linkus()">
+        <li class="clearfix" @click="linkusTo()">
           <span>联系我们</span>
           <span class="messagebox-right">
             <i></i>
           </span>
         </li>
-        <li class="clearfix">
+        <li class="clearfix" @click="termsTo()">
           <span>使用条款</span>
           <span class="messagebox-right">
             <i></i>
@@ -99,11 +99,17 @@ export default {
   },
   created() {},
   methods: {
-    linkto() {
+    childMessageTo() {
       this.$router.push({ name: "childMessage" });
     },
-    linkus() {
+    linkusTo() {
       this.$router.push({ name: "connectUs" });
+    },
+    versionsTo() {
+      this.$router.push({ name: "versions" });
+    },
+    termsTo() {
+      this.$router.push({ name: "terms" });
     }
   }
 };
