@@ -7,6 +7,10 @@ import Vant from '@/vants/vant.js'
 import 'vant/lib/index.css';
 Vant()
 
+import Elementui from '@/elementui/elementui.js'
+// import 'element-ui/lib/theme-chalk/index.css';
+Elementui()
+
 import axios from 'axios';
 Vue.prototype.$axios = axios;
 
