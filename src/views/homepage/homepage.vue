@@ -67,7 +67,7 @@
           </ul>
         </div>
       </div>
-      <div class="standard">
+      <div class="standard" @click="healthStandardTo()">
         <p class="clearfix">
           <span>国家学生体质健康标准</span>
           <span class="classtime fr">
@@ -151,6 +151,10 @@ export default {
     };
   },
   created() {},
-  methods: {}
+  methods: {
+    healthStandardTo() {
+      this.$router.push({ name: "healthStandard" });
+    }
+  }
 };
 </script>

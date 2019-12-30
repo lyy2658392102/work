@@ -46,9 +46,17 @@ export const constantRouterMap = [{
     name: 'terms',
     component: () => import('@/views/terms/terms'),
   }, {
-    path: '/educationSchedule',
-    name: 'educationSchedule',
-    component: () => import('@/views/educationSchedule/educationSchedule'),
+    path: '/physicalSyllabus',
+    name: 'physicalSyllabus',
+    component: () => import('@/views/physicalSyllabus/physicalSyllabus'),
+  }, {
+    path: '/ktjlPerformance',
+    name: 'ktjlPerformance',
+    component: () => import('@/views/ktjlPerformance/ktjlPerformance'),
+  }, {
+    path: '/healthStandard',
+    name: 'healthStandard',
+    component: () => import('@/views/healthStandard/healthStandard'),
   },
 
 ]

@@ -5,11 +5,9 @@ import {
     Switch,
     Button,
     Checkbox,
-    CheckboxGroup
-
-
-
-
+    CheckboxGroup,
+    Row,
+    Col
 } from 'vant';
 export default () => {
     Vue.use(Field);
@@ -18,4 +16,6 @@ export default () => {
     Vue.use(Button);
     Vue.use(CheckboxGroup);
     Vue.use(Checkbox);
+    Vue.use(Row).use(Col);
+
 }

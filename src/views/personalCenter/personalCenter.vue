@@ -2,8 +2,8 @@
   <div class="personalCenter">
     <header class="clearfix">
       <i class="fl" @click="goBack()"></i>
-      <div class="header-center fl">个人中心</div>
       <div class="sign-out fr">退出登录</div>
+      <div class="header-center">个人中心</div>
     </header>
     <div class="myMessage">
       <p class="pt">我的信息</p>

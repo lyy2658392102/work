@@ -1,0 +1,175 @@
+.ktjlPerformance {
+    header {
+        margin-bottom: 0;
+    }
+
+    main {
+        margin: 30px;
+        background: #fff;
+        border-radius: 12px;
+        position: relative;
+
+        .triangle {
+            width: 57px;
+            height: 57px;
+            background: #F0F0F0;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border: 28px solid transparent;
+                border-top: 28px solid #F2F4F5;
+                border-right: 28px solid #F2F4F5;
+            }
+        }
+
+        .ktjl-top,
+        .run-grades {
+            padding: 0 15px;
+
+            p {
+                color: #434343;
+                font-size: 24px;
+                line-height: 55px;
+            }
+        }
+
+        .ktjl-top {
+
+
+            h3 {
+                font-size: 36px;
+                font-weight: bold;
+                color: #434343;
+                padding-top: 35px;
+            }
+
+
+
+            .manifestation {
+                height: 130px;
+                margin-bottom: 20px;
+                padding: 30px;
+                border: 1px solid #D2D2D2;
+
+                .manifestation-left {
+                    display: inline-block;
+                    text-align: center;
+
+                    img {
+                        display: block;
+                        width: 90px;
+                        height: 90px;
+                        // margin: 30px 0 0 35px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        line-height: 40px;
+                        color: #434343;
+                        font-size: 24px;
+                    }
+
+                }
+
+            }
+        }
+
+        .run-grades {
+            padding: 0 15px 20px 15px;
+
+            ul {
+                border: 1px solid #D2D2D2;
+                margin-bottom: 20px;
+                display: flex;
+                background-color: rgb(241, 240, 212);
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 40px 20px;
+                    background-color: rgb(212, 224, 241);
+
+                    span:nth-child(2) {
+                        font-size: 20px;
+                    }
+                }
+
+                li:first-child {
+
+                    img {
+                        display: block;
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+
+                li:nth-child(2),
+                li:nth-child(3),
+                li:nth-child(4) {
+                    span:first-child {
+                        color: #FF7A18;
+
+                        span:first-child {
+                            font-size: 40px;
+                            font-family: Uberform-Regular
+                        }
+
+                        span:nth-child(2) {
+                            font-family: PingFang-SC-Bold;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                li:nth-child(3),
+                li:nth-child(4) {
+                    span:first-child {
+                        color: #434343;
+                    }
+                }
+
+
+
+                li:last-child {
+                    // border-left: 0.15rem solid #dcdcdc;
+                    background-color: rgb(241, 240, 212);
+                    position: relative;
+
+                    >span:nth-child(2) {
+                        color: #FFC745;
+
+                        span:first-child {
+                            font-size: 60px;
+                            font-family: Uberform-Regular
+                        }
+
+                        span:nth-child(2) {
+                            font-family: PingFang-SC-Bold;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .sanjiao {
+                        width: 0;
+                        height: 0;
+                        border-bottom: 182px solid rgb(241, 240, 212);
+                        border-left: 23px solid transparent;
+                        position: absolute;
+                        left: -23px;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

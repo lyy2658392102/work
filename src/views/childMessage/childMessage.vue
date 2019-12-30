@@ -2,8 +2,8 @@
   <div class="childMessage">
     <header class="clearfix">
       <i class="fl" @click="goBack()"></i>
-      <div class="header-center fl">孩子信息</div>
       <div class="sign-out fr">保存</div>
+      <div class="header-center">孩子信息</div>
     </header>
     <div class="myMessage">
       <p class="pt">个人信息</p>

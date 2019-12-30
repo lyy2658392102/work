@@ -1,6 +1,7 @@
 .personalCenter,
 .childMessage,
-.connectUs {
+.connectUs,
+.healthStandard {
     height: 100%;
     // background-color: #F2F4F5;
 
@@ -17,26 +18,26 @@
         height: 100px;
 
         i {
-            width: 10%;
+            width: 72px;
             display: inline-block;
             height: 100px;
             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAB2ElEQVRYR+3XPWsVQRjF8f9RUEQQgqJGRSIKEjCFlY2BgEGwsLZKE3wpBAsllWATsBJtgo0YSJMUIYhYRBRRv4xovkBA0CMbnsAyJHJnd5a9xd169u7vnplnnhkxpI+G1MUIljsznSdme+cbkpyD6xRm+zbwFjgE3JO0PiiuM5jtW8A74HBgfkoa7xVm+wbwAThSg/QLs30d+AgcraH+AHOS1npJzPY14BNwrAaoFv0DSW8GRe0US87g/421fRX4AowlqEeSlnK/UwRm+wrwFTiRABYkvchFFUnM9mXgG3A6ATyTtNgE1Rpm+2KgziWA55KeNkW1gtk+D3wHJhLAK0mP26Aaw2yfCdSlBPBa0sO2qEYw2ydj+iYTwDJwN7cn7vcnsqvSdlV9M8kPrsYG+rdEWtmJ2T4I/AYO1AC/gAuStkuhsmHVC7Y/A7MJYgO4I6lqPUWeJlN5PDbTqS6nMxsWqXVeAI1gget0y2gMC9x+m+xLSU/aLLZWsMB10pZawwJXvJEXgQWu6NGnGCxwxQ6LRWGB2+t4XbWqeUkrgxZEcVjgpoHN5EKyJelUr7DApVe4H5LO9g4L3M3aTfy+pPdDARsUsde4TtZYG9DuuyNYboqjxHIT+wdIlZYngrsyrQAAAABJRU5ErkJggg==)20px 32px no-repeat;
         }
 
         .header-center {
-            width: 70%;
+            // width: 70%;
             text-align: center;
             font-size: 32px;
             color: #fff;
         }
 
         .sign-out {
-            width: 15%;
+            width: 128px;
             line-height: 100px;
             height: 100px;
             font-size: 26px;
             color: #fff;
-            padding-right: 20px
+            // padding-right: 20px
         }
     }
 
