@@ -61,7 +61,7 @@ export default {
   data() {
     return {
       noclass: noclass,
-      flag: 0,
+      flag: 1,
       loginList: {
         liveStreaming: "孩子正在上课",
         noPE: "40分钟课堂内容",

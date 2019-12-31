@@ -41,7 +41,7 @@
           <p v-text="loginList.noPE"></p>
         </div>
       </div>
-      <div class="PErecord">
+      <div class="PErecord" @click="physicalSyllabusTo()">
         <p class="clearfix">
           <span>体育课记录</span>
           <span class="classtime fr">
@@ -154,6 +154,9 @@ export default {
   methods: {
     healthStandardTo() {
       this.$router.push({ name: "healthStandard" });
+    },
+    physicalSyllabusTo() {
+      this.$router.push({ name: "physicalSyllabus" });
     }
   }
 };

@@ -24,9 +24,9 @@
                 bottom: 0;
                 width: 0;
                 height: 0;
-                border: 28px solid transparent;
-                border-top: 28px solid #F2F4F5;
-                border-right: 28px solid #F2F4F5;
+                border: 30px solid transparent;
+                border-top: 30px solid #f7f8fa;
+                border-right: 30px solid #f7f8fa;
             }
         }
 
@@ -89,7 +89,7 @@
                 border: 1px solid #D2D2D2;
                 margin-bottom: 20px;
                 display: flex;
-                background-color: rgb(241, 240, 212);
+                background-color: #fffaf5;
 
                 li {
                     display: flex;
@@ -97,7 +97,7 @@
                     justify-content: space-around;
                     align-items: center;
                     padding: 40px 20px;
-                    background-color: rgb(212, 224, 241);
+                    background-color: #f5f7ff;
 
                     span:nth-child(2) {
                         font-size: 20px;
@@ -141,8 +141,7 @@
 
 
                 li:last-child {
-                    // border-left: 0.15rem solid #dcdcdc;
-                    background-color: rgb(241, 240, 212);
+                    background-color: #fffaf5;
                     position: relative;
 
                     >span:nth-child(2) {
@@ -162,7 +161,7 @@
                     .sanjiao {
                         width: 0;
                         height: 0;
-                        border-bottom: 182px solid rgb(241, 240, 212);
+                        border-bottom: 187px solid #fffaf5;
                         border-left: 23px solid transparent;
                         position: absolute;
                         left: -23px;

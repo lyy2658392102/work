@@ -7,7 +7,10 @@ import {
     Checkbox,
     CheckboxGroup,
     Row,
-    Col
+    Col,
+    Collapse,
+    CollapseItem,
+    Overlay
 } from 'vant';
 export default () => {
     Vue.use(Field);
@@ -17,5 +20,7 @@ export default () => {
     Vue.use(CheckboxGroup);
     Vue.use(Checkbox);
     Vue.use(Row).use(Col);
+    Vue.use(Collapse).use(CollapseItem);
+    Vue.use(Overlay);
 
 }

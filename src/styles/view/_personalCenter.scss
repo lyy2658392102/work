@@ -3,7 +3,6 @@
 .connectUs,
 .healthStandard {
     height: 100%;
-    // background-color: #F2F4F5;
 
     .pt {
         padding-left: 30px;
@@ -25,7 +24,6 @@
         }
 
         .header-center {
-            // width: 70%;
             text-align: center;
             font-size: 32px;
             color: #fff;
@@ -37,15 +35,12 @@
             height: 100px;
             font-size: 26px;
             color: #fff;
-            // padding-right: 20px
         }
     }
 
     .myMessage,
     .childMessage-box,
     .rests {
-        background-color: rgba(245, 245, 245, 0.952);
-
         p {
             line-height: 68px;
             font-size: 24px;
