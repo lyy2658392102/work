@@ -1,0 +1,34 @@
+.singleSelfTest {
+    .lineColor {
+        background: linear-gradient(120deg, #e67d2a, #e05421);
+
+
+        header {
+            margin-bottom: 0;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .singleSelfTest-top {
+            padding: 0 30px;
+
+            ul {
+                display: flex;
+
+                li {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    //  align-items: center;
+                }
+            }
+
+            img {
+                width: 79px;
+                height: 79px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+}

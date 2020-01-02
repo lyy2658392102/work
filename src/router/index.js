@@ -57,6 +57,10 @@ export const constantRouterMap = [{
     path: '/healthStandard',
     name: 'healthStandard',
     component: () => import('@/views/healthStandard/healthStandard'),
+  }, {
+    path: '/singleSelfTest',
+    name: 'singleSelfTest',
+    component: () => import('@/views/singleSelfTest/singleSelfTest'),
   },
 
 ]

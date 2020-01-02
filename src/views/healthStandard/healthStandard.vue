@@ -2,11 +2,11 @@
   <div class="healthStandard">
     <header>
       <i class="fl" @click="goBack()"></i>
-      <div class="sign-out fr">标准说明</div>
+      <div class="sign-out fr">国家标准</div>
       <div class="header-center">国家学生体质健康标准</div>
     </header>
     <main>
-      <div class="synthesisScore">
+      <div class="synthesisScore" @click="overlayShow=true">
         <ul>
           <li>
             <span>综合得分</span>
@@ -61,16 +61,37 @@
             </div>
           </van-collapse-item>
         </van-collapse>
-        <div class="btn flexCenter">
+        <div class="btn flexCenter" @click="singleSelfTestTo()">
           <van-button type="default" round size="large" color="#FF7A18">单项自测</van-button>
         </div>
       </div>
     </div>
-    <!-- 综合得分弹窗 -->
-    <van-overlay :show="show" @click="show = false">
+    <!-- 遮罩层综合得分弹窗 -->
+    <van-overlay :show="overlayShow" @click="show = false">
       <div class="wrapper" @click.stop>
         <div class="block">
-          <h4>综合总得分详情</h4>
+          <div class="block-top">
+            <h4>综合总得分详情</h4>
+            <div
+              :class="'scorebox'+index"
+              v-for="(item,index) in scoreDetailList"
+              :key="index"
+              ref="scoreDom"
+            >
+              <div class="orange-boxs" v-for="(vv,ii) in item" :key="ii">
+                <p>{{vv.sportEvents}}</p>
+                <p>
+                  <span v-text="extraPoint"></span>
+                  <span>{{vv.percent}}</span>
+                </p>
+                <p>
+                  <span>{{vv.score}}分</span>
+                </p>
+                <i>+</i>
+              </div>
+            </div>
+          </div>
+          <div class="block-bottom" @click="IKnow()">我知道了</div>
         </div>
       </div>
     </van-overlay>
@@ -82,7 +103,8 @@ export default {
   data() {
     return {
       tcjl: tcjl,
-      show: true,
+      overlayShow: false,
+      // extraPointShow: 1,
       flog: 0,
       activeNames: "1",
       // 综合得分列表
@@ -146,10 +168,84 @@ export default {
           result: "78个",
           score: "43"
         }
+      ],
+      // 遮罩层得分详情列表
+      extraPoint: "占",
+      scoreDetailList: [
+        {
+          sportEvents: "50米跑",
+          percent: "20%",
+          score: "17.6"
+        },
+        {
+          sportEvents: "50米*8往返跑",
+          percent: "40%",
+          score: "38.4"
+        },
+        {
+          sportEvents: "1分钟跳绳",
+          percent: "10%",
+          score: "9.1"
+        },
+        {
+          sportEvents: "1分钟仰卧起坐",
+          percent: "20%",
+          score: "18.6"
+        },
+        {
+          sportEvents: "坐位体前屈",
+          percent: "10%",
+          score: "8.9"
+        },
+        {
+          sportEvents: "坐位体前屈",
+          percent: "附加分",
+          score: "5"
+        }
       ]
     };
   },
-  created() {},
-  methods: {}
+  created() {
+    this.processData();
+    this.$nextTick(() => {
+      this.addclass();
+    });
+  },
+  methods: {
+    singleSelfTestTo() {
+      this.$router.push({ name: "singleSelfTest" });
+    },
+    // 处理scoreDetailList数据
+    processData() {
+      let result = [];
+      for (var i = 0; i < this.scoreDetailList.length; i += 3) {
+        result.push(this.scoreDetailList.slice(i, i + 3));
+      }
+      this.scoreDetailList = result;
+
+      // this.scoreDetailList.map(item => {
+      //   item.forEach((vv, ii) => {
+      //     if (vv.percent === "附加分") {
+      //       console.log(vv, ii);
+      //       this.extraPointShow = "extraPointShow";
+      //     }
+      //   });
+      // });
+    },
+    // 添加类名
+    addclass() {
+      console.log(this.$refs.scoreDom);
+      this.$refs.scoreDom.map(item => {
+        console.log(item);
+
+        // item.forEach((vv, ii) => {
+        //   console.log(vv, ii);
+        // });
+      });
+    },
+    IKnow() {
+      this.overlayShow = false;
+    }
+  }
 };
 </script>

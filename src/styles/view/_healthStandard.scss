@@ -191,23 +191,95 @@
         margin-top: 50px;
     }
 
+    // 遮罩层
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-    }
 
-    .block {
-        width: 560px;
-        height: 560px;
-        background-color: #fff;
+        .block {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 8px;
 
-        h4 {
-            color: #434343;
-            font-size: 30px;
-            line-height: 90px;
-            text-align: center;
+            .block-top {
+                padding: 0 30px 20px 30px;
+                border-bottom: 1px solid #C8C8C8;
+
+                h4 {
+                    color: #434343;
+                    font-size: 30px;
+                    line-height: 90px;
+                    text-align: center;
+                }
+
+                .orange-boxs {
+                    box-sizing: border-box;
+                    display: inline-block;
+                    width: 30%;
+                    background-color: #FF7A18;
+                    border-radius: 8px;
+                    padding: 10px 0;
+                    margin: 0 25px 25px 0;
+                    position: relative;
+
+                    p:nth-last-child(2) {
+                        font-size: 30px;
+                        padding-top: 10px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        font-family: Uberform-Regular;
+                        color: #fff;
+                        line-height: 30px;
+                        text-align: center;
+                    }
+
+
+                }
+
+                // 消除每行最后的"+"
+                .scorebox0,
+                .scorebox1,
+                .scorebox2,
+                .scorebox3,
+                .scorebox4 {
+                    .orange-boxs:last-child {
+                        margin: 0 0 25px 0;
+
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+
+                // +号
+                .orange-boxs>i {
+                    display: inline-block;
+                    font-size: 30px;
+                    color: #FF7A18;
+                    position: absolute;
+                    top: 30%;
+                    right: -20px;
+                }
+
+                >div:last-child .orange-boxs:last-child {
+                    background-color: #84C76F;
+                }
+
+            }
+
+
+            .block-bottom {
+                font-size: 30px;
+                text-align: center;
+                color: rgba(255, 122, 24, 1);
+                line-height: 80px;
+            }
         }
     }
+
+
 }
