@@ -1,7 +1,7 @@
 .singleSelfTest {
     .lineColor {
         background: linear-gradient(120deg, #e67d2a, #e05421);
-
+        padding-bottom: 30px;
 
         header {
             margin-bottom: 0;
@@ -11,22 +11,86 @@
         .singleSelfTest-top {
             padding: 0 30px;
 
-            ul {
+            .childbox {
                 display: flex;
 
-                li {
+                >div {
                     width: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    //  align-items: center;
+                    display: block;
+                    color: #fff;
+                    font-size: 24px;
+
                 }
+
+                .childbox-left {
+                    >div span {
+                        font-size: 30px;
+                        font-family: PingFang SC;
+                    }
+
+                    img {
+                        width: 79px;
+                        height: 79px;
+                        margin: 0 10px 10px 0;
+                    }
+                }
+
+                .childbox-right {
+                    text-align: right;
+
+                    >div {
+                        font-size: 60px;
+                        font-family: PingFang-SC-Heavy;
+
+                        span {
+                            font-size: 60px;
+                            font-family: Uberform-Regular;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            margin-right: 10px;
+                        }
+                    }
+
+                }
+
             }
 
-            img {
-                width: 79px;
-                height: 79px;
-                margin-right: 10px;
+        }
+    }
+
+    .singleSelfTest-bottom {
+        .indicator {
+            table {
+                display: flex;
+
+                th {
+                    font-size: 24px;
+                    color: #FF7A18;
+                    line-height: 64px;
+                    padding: 0 30px;
+
+
+                    td {
+                        width: 30%;
+                    }
+
+                    td:nth-child(2),
+                    td:nth-child(3) {
+                        // display: inline-block;
+                        width: 25%;
+
+                    }
+
+                    td:last-child {
+                        width: 20%;
+                    }
+                }
+
+
+
             }
         }
     }
