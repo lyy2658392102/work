@@ -10,7 +10,12 @@ import {
     Col,
     Collapse,
     CollapseItem,
-    Overlay
+    Overlay,
+    SwipeCell,
+    Cell,
+    Popup,
+    List
+
 } from 'vant';
 export default () => {
     Vue.use(Field);
@@ -22,5 +27,9 @@ export default () => {
     Vue.use(Row).use(Col);
     Vue.use(Collapse).use(CollapseItem);
     Vue.use(Overlay);
+    Vue.use(SwipeCell);
+    Vue.use(Cell);
+    Vue.use(Popup);
+    Vue.use(List);
 
 }
