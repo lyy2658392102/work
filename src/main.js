@@ -10,12 +10,6 @@ Vant()
 import axios from 'axios';
 Vue.prototype.$axios = axios;
 
-import VueTouch from 'vue-touch'
-Vue.use(VueTouch, {
-  name: 'v-touch'
-})
-
-
 import '@/styles/index.scss' // global css
 
 import QueryString from '@/utils/QueryString'

@@ -22,7 +22,6 @@
                     display: block;
                     color: #fff;
                     font-size: 24px;
-
                 }
 
                 .childbox-left {
@@ -70,6 +69,7 @@
             box-sizing: border-box;
             border: 1px dotted #434343;
             margin-top: 100px;
+            width: 100%;
         }
 
         .indicator {
@@ -135,8 +135,8 @@
         bottom: 0;
     }
 
-    // 遮罩层
-    .van-overlay {
+    // 录入锻炼遮罩层
+    .exerciseOverlay {
         background-color: rgba(0, 0, 0, 0.3);
 
         .wrapper {
@@ -202,22 +202,50 @@
                 }
 
                 .van-popup {
-                    // position: relative;
-
                     >p {
                         line-height: 60px;
                         color: #C8C8C8;
                         font-size: 24px;
-                        // position: absolute;
-                        // top: 0;
+
                     }
 
                     .van-list {
+
                         .van-cell {
                             font-size: 24px;
                             line-height: 50px;
                         }
                     }
+
+                    .van-picker {
+                        .van-picker__columns {
+                            // height: 320px !important;
+                        }
+
+                        ul li {
+
+                            font-size: 24px;
+                            line-height: 60px;
+                        }
+                    }
+
+                    ul {
+                        height: 420px;
+                        overflow-y: auto;
+
+                        &::-webkit-scrollbar {
+                            width: 0;
+                            height: 0;
+                            display: none;
+                        }
+
+                        li {
+                            font-size: 24px;
+                            line-height: 60px;
+                            height: 60px;
+                        }
+                    }
+
 
                 }
 
@@ -272,5 +300,105 @@
             }
         }
     }
+
+    // 成绩遮罩层
+    .gradeOverlay {
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .block {
+            width: 80%;
+            border-radius: 8px;
+            background-color: #fff;
+            position: relative;
+
+            >img {
+                display: inline-block;
+                position: absolute;
+                bottom: -95px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            .block-img {
+                display: block;
+                z-index: 100;
+                width: 70%;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -30%);
+
+                >img {
+                    width: 100%;
+                }
+
+                >p {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 50%;
+                    transform: translate(-50%, 0px);
+                    color: #fff;
+
+                    span:first-child {
+                        font-size: 74px;
+                        font-family: Uberform-Regular;
+                    }
+
+                    span:nth-child(2) {
+                        font-size: 40px;
+                        font-family: PingFang-SC-Heavy;
+                    }
+                }
+            }
+
+            .block-top {
+                border-radius: 8px 8px 0 0;
+                height: 200px;
+                opacity: 0.9;
+                background: linear-gradient(0deg, rgba(255, 195, 59, 1) 0%, rgba(239, 159, 21, 1) 100%);
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-width: 0 288px 100px;
+                    border-style: solid;
+                    border-color: transparent transparent #fff;
+                    position: absolute;
+                    bottom: -1px;
+                }
+
+
+            }
+
+            .block-center {
+                height: 350px;
+                position: relative;
+                text-align: center;
+
+                >div {
+                    position: absolute;
+                    bottom: 50px;
+                    width: 100%;
+                    margin: 0 auto;
+
+                    p {
+                        font-size: 36px;
+                        color: #575454;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
 
 }

@@ -14,7 +14,10 @@ import {
     SwipeCell,
     Cell,
     Popup,
-    List
+    List,
+    Picker
+
+
 
 } from 'vant';
 export default () => {
@@ -31,5 +34,6 @@ export default () => {
     Vue.use(Cell);
     Vue.use(Popup);
     Vue.use(List);
+    Vue.use(Picker);
 
 }
